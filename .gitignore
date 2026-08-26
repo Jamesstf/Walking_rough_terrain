@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.idea/
+.vscode/
+wandb/
+core
+core.*
+*.log
+
+# Historical local snapshots are not part of the focused release.
+legged_gym/legged_gym/envs/g1/g1_walking_unitree/backup/
+legged_gym/legged_gym/envs/g1/g1_walking_rough/MODEL_6000_VALIDATION.md
+
+# Training output is intentionally excluded except for four reproducibility checkpoints.
+legged_gym/logs/**
+!legged_gym/logs/g1_walking_unitree/
+!legged_gym/logs/g1_walking_unitree/seed_31_1/
+!legged_gym/logs/g1_walking_unitree/seed_31_1/model_20000.pt
+!legged_gym/logs/g1_walking_rough/
+!legged_gym/logs/g1_walking_rough/rough_warmstart_33/
+!legged_gym/logs/g1_walking_rough/rough_warmstart_33/model_10000.pt
+!legged_gym/logs/g1_walking_rough_perceptive/
+!legged_gym/logs/g1_walking_rough_perceptive/oracle_heightmap_34/
+!legged_gym/logs/g1_walking_rough_perceptive/oracle_heightmap_34/model_10000.pt
+!legged_gym/logs/g1_walking_rough_perceptive/noisy_heightmap_34/
+!legged_gym/logs/g1_walking_rough_perceptive/noisy_heightmap_34/model_10000.pt
